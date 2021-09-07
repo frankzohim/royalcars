@@ -1,12 +1,12 @@
-{
+{   
    "require": {
-        "doctrine/orm": "*"
+        "doctrine/orm": "^2.6.2",
+        "symfony/yaml": "2.*",
+        "symfony/cache":"5.3"
     },
     
     "autoload": {
-        "classmap": [
-            "app/"
-        ]
+        "psr-0": {"": "src/"}
     },
     
     "require-dev": {

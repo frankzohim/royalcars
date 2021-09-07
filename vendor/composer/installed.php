@@ -1,31 +1,31 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '006a0958dffc4103bc0bc665d30b6f8f472daefa',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '006a0958dffc4103bc0bc665d30b6f8f472daefa',
             'dev_requirement' => false,
         ),
         'composer/package-versions-deprecated' => array(
-            'pretty_version' => '1.11.99.2',
-            'version' => '1.11.99.2',
+            'pretty_version' => '1.11.99.3',
+            'version' => '1.11.99.3',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/./package-versions-deprecated',
             'aliases' => array(),
-            'reference' => 'c6522afe5540d5fc46675043d3ed5a45a740b27c',
+            'reference' => 'fff576ac850c045158a250e7e27666e146e78d18',
             'dev_requirement' => false,
         ),
         'doctrine/annotations' => array(
@@ -119,12 +119,12 @@
             'dev_requirement' => false,
         ),
         'doctrine/orm' => array(
-            'pretty_version' => '2.9.4',
-            'version' => '2.9.4.0',
+            'pretty_version' => '2.9.5',
+            'version' => '2.9.5.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/orm',
             'aliases' => array(),
-            'reference' => 'b19a13f4edfaa5806109cd899f5912a7df1547b5',
+            'reference' => '77cc86ed880e3f1f6c9c5819e131a8aaeeeee0da',
             'dev_requirement' => false,
         ),
         'doctrine/persistence' => array(
@@ -272,13 +272,19 @@
             'dev_requirement' => true,
         ),
         'psr/cache' => array(
-            'pretty_version' => '3.0.0',
-            'version' => '3.0.0.0',
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../psr/cache',
             'aliases' => array(),
-            'reference' => 'aa5030cfa5405eccfdcb1083ce040c2cb8d253bf',
+            'reference' => '213f9dbc5b9bfbc4f8db86d2838dc968752ce13b',
             'dev_requirement' => false,
+        ),
+        'psr/cache-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0|2.0',
+            ),
         ),
         'psr/container' => array(
             'pretty_version' => '1.1.1',
@@ -289,10 +295,25 @@
             'reference' => '8622567409010282b7aeebe4bb841fe98b58dcaf',
             'dev_requirement' => false,
         ),
+        'psr/log' => array(
+            'pretty_version' => '1.1.4',
+            'version' => '1.1.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/log',
+            'aliases' => array(),
+            'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
+            'dev_requirement' => false,
+        ),
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
                 0 => '1.0|2.0',
+            ),
+        ),
+        'psr/simple-cache-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
             ),
         ),
         'sebastian/cli-parser' => array(
@@ -439,6 +460,30 @@
             'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
             'dev_requirement' => true,
         ),
+        'symfony/cache' => array(
+            'pretty_version' => 'v5.3.0',
+            'version' => '5.3.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/cache',
+            'aliases' => array(),
+            'reference' => '44fd0f97d1fb198d344f22379dfc56af2221e608',
+            'dev_requirement' => false,
+        ),
+        'symfony/cache-contracts' => array(
+            'pretty_version' => 'v2.4.0',
+            'version' => '2.4.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/cache-contracts',
+            'aliases' => array(),
+            'reference' => 'c0446463729b89dd4fa62e9aeecc80287323615d',
+            'dev_requirement' => false,
+        ),
+        'symfony/cache-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0|2.0',
+            ),
+        ),
         'symfony/console' => array(
             'pretty_version' => 'v5.3.6',
             'version' => '5.3.6.0',
@@ -527,6 +572,24 @@
             'install_path' => __DIR__ . '/../symfony/string',
             'aliases' => array(),
             'reference' => 'bd53358e3eccec6a670b5f33ab680d8dbe1d4ae1',
+            'dev_requirement' => false,
+        ),
+        'symfony/var-exporter' => array(
+            'pretty_version' => 'v5.3.4',
+            'version' => '5.3.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/var-exporter',
+            'aliases' => array(),
+            'reference' => 'b7898a65fc91e7c41de7a88c7db9aee9c0d432f0',
+            'dev_requirement' => false,
+        ),
+        'symfony/yaml' => array(
+            'pretty_version' => 'v2.8.52',
+            'version' => '2.8.52.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/yaml',
+            'aliases' => array(),
+            'reference' => '02c1859112aa779d9ab394ae4f3381911d84052b',
             'dev_requirement' => false,
         ),
         'theseer/tokenizer' => array(

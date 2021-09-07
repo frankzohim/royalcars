@@ -67,5 +67,6 @@ class MySQL57Platform extends MySqlPlatform
         parent::initializeDoctrineTypeMappings();
 
         $this->doctrineTypeMapping['json'] = Types::JSON;
+		 $this->doctrineTypeMapping['enum'] = Types::STRING;
     }
 }
