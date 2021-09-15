@@ -11,7 +11,7 @@
                   </div>
                   <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
                     <div class="r-header-action float-left">
-                      <a href="login-register.php"> <img src="assets/images/icon-lock.png" alt='' /> <span>Login</span></a>
+                      <a href="login-register"> <img src="assets/images/icon-lock.png" alt='' /> <span>Login</span></a>
                       <a href="#" class="r-search"> <img src="assets/images/icon-search.png" alt='' /> <span>Search</span></a>
 
                       <div class="r-search-wrapper">

@@ -115,4 +115,7 @@ ob_start();
           </div>
         </section>
         <?php $content = ob_get_clean(); ?>
-<?php require('../layouts/master.php'); ?>
+        
+<?php 
+
+require '../views/layouts/master.php';?>
