@@ -1,3 +1,4 @@
+
 <?php
 $title='Login-register';
 ob_start();
@@ -45,6 +46,7 @@ ob_start();
                       <div class="form-group">
                         <input type="password" class="form-control" required placeholder="Password">
                       </div>
+                      
                       <div class="form-group">
                         <button class="btn btn-full">LOGIN NOW</button>
                       </div>
@@ -63,22 +65,42 @@ ob_start();
                     <span>Required information for account creation</span>
                   </div>
                   <div class="r-auth-form">
-                    <form action="#">
+                    <form method="post" action="register">
+                    <div class="form-group">
+                        <input type="text" required class="form-control" placeholder="Lastname" name="lastname">
+                      </div>  
                       <div class="form-group">
-                        <input type="text" required class="form-control" placeholder="User name">
+                        <input type="text" required class="form-control" placeholder="User name" name="name">
                       </div>
                       <div class="form-group">
-                        <input type="password" required class="form-control" placeholder="Password">
+                        <input type="password" required class="form-control" placeholder="Password" name="password">
                       </div>
                       <div class="form-group">
                         <input type="password" required class="form-control" placeholder="Confirm Password">
                       </div>
                       <div class="form-group">
-                        <input type="email" required class="form-control" placeholder="Email Address">
+                        <input type="email" required class="form-control" placeholder="Email Address" name="email">
+                      </div>
+                       <div class="input-group input-group-alternative mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                    </div>
+                                    <input id="phone" name="phone" type="tel" required size="29" placeholder="your phone number">
+                                </div>
+                      <div class="form-group">
+                        <select name="account-type" required class="form-control">
+
+
+<option value="">--Please choose your type--</option>
+                              <option value="Customer">Customer</option>
+                              <option value="Provider">Provider</option>
+                             
+                      </select>
                       </div>
                       <div class="form-group">
                         <img src="assets/images/recaptcha.jpg" class="img-fluid d-block m-auto" alt="">
                       </div>
+                      
                       <div class="form-group">
                         <button class="btn btn-full">SIGN UP NOW</button>
                       </div>
