@@ -1,7 +1,7 @@
 <?php
 
 
-
+namespace app\Models;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -119,5 +119,51 @@ class Users
      */
     private $updatedAt;
 
+
+     public function getId(){
+         return $this->id;
+     }
+     public function getEmail(){
+         return $this->email;
+     }
+     public function setEmail($email){
+         $this->email=$email;
+     }
+     public function getRole(){
+        return $this->roleId;
+     }
+     public function setRole($role){
+         if($role=="Customer"){
+             $this->roleId=2;
+         }
+         elseif($role=="Provider"){
+             $this->roleId=3;
+         }
+     }
+   public function getName(){
+       return $this->name;;
+   }
+   public function setName($name){
+       $this->name=$name;
+   }
+   public function getLastname(){
+      return $this->lastname;
+   }
+   public function setLastName($lastname){
+       $this->lastname=$lastname;
+   }
+   public function getPassword(){
+       return $this->password;
+   }
+   public function setPassword($password){
+       $this->password=$password;
+   }
+
+   public function getNumberPhone(){
+       return $this->phone;
+   }
+   public function setNumberPhone($phone){
+       $this->phone=$phone;
+   }
 
 }

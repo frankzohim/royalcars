@@ -9,6 +9,9 @@ switch ($_SERVER['REQUEST_URI']){
     case '/login-register':
         require '../views/pages/login-register.php';
         break;
+    case '/register':
+        require '../app/Controllers/UserControllers/CreateUser.php';
+        break;   
     default :
         header("HTTP/1.0 404 Not Found");
 }
